@@ -1,0 +1,40 @@
+body {
+    font-family: 'Times New Roman', Times, serif;    
+}
+
+p {
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #fe0909;
+}
+h2 {
+    background-color: #008100;
+    color: white;    
+}
+
+.textHeader #oneParagraph{
+    background-color: #0000fe;
+    color: white;   
+
+    height: auto;
+    width: 100px;
+
+    margin: 0px auto 100px 0px;
+}
+.textHeader #twoParagraph span{
+    color: red;
+}
+
+.uniqueTitleSection {
+    padding: 40px 0px 40px 50px;
+}
+.uniqueTextSection {
+    padding: 0px 0px 0px 100px;
+}
+
+.listItem li {
+    border: black solid 1px;
+    font-size: 25px;
+}
