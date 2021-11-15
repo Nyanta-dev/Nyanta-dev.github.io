@@ -32,9 +32,6 @@ h3 {
     color: white;
     display: flex;
 }
-.header .wrapper {
-    width: 1230px; 
-}
 .header .offer {
     margin: 0px;
 }
