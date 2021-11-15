@@ -1,4 +1,5 @@
-body {    
+body {
+    justify-items: center;
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 0.02em;
     font-size: 15px;
@@ -7,7 +8,7 @@ body {
 }
 
 h1 h2 h3 h4 h5 h6 {
-    font-family: 'Montserrat', sans-serif;    
+    font-family: 'Montserrat', sans-serif;
     font-size: bold;
 }
 h1 {
@@ -21,8 +22,10 @@ h3 {
 }
 
 .container {
-    width: 1170px; 
-    margin: 62px auto;        
+    box-sizing: border-box;
+    padding: 0px 60px;
+    width: 1290px;
+    margin: 62px auto;
 }
 
 
@@ -32,14 +35,17 @@ h3 {
     color: white;
     display: flex;
 }
+.header .container {
+    padding-right: 0px;
+}
 .header .offer {
-    margin: 0px;
+    margin: 150px 0px;
 }
 .header .title {
     margin: 0px;
     color: white;
 }
-.header .title span{
+.header .title span {
     font-size: 59px;
     line-height: 73px;
 }
@@ -47,6 +53,11 @@ h3 {
     color: white;
     width: 400px;
     margin: 35px 0px;
+}
+.header .travel {
+    width: 641px;
+    height: 641px;
+    position: relative;
 }
 
 
@@ -56,10 +67,7 @@ h3 {
     display: flex;
     text-align: center;
 }
-.future .container {
-    margin: 100px auto;   
-}
-.future .wrapper {    
+.future .wrapper {
     margin: 50px 0px;
 }
 .future .event-1 {
@@ -86,20 +94,18 @@ h3 {
     text-align: center;
 }
 .order .container {
-    margin: 100px auto;   
+    margin: 100px auto;
 }
 .order .form {
     margin: 25px auto;
     width: 340px;
 }
-.order .form .input {    
+.order .form .input {
     font-size: 16px;
     height: 50px;
     width: 100%;
-
     margin: 7px 0px;
-
-    padding: 1px 30px;    
+    padding: 1px 30px;
     box-sizing: border-box;
 }
 .order .form .button {
@@ -118,11 +124,12 @@ h3 {
 .footer .credits {
     text-align: center;
     color: white;
+    margin: auto;
 }
 
 
 
-.section-title {    
+.section-title {
     margin: 0px;
 }
 
@@ -139,15 +146,165 @@ h3 {
     line-height: 25px;
     font-weight: 900;
     text-align: center;
-	text-decoration: none;
-
+    text-decoration: none;
     display: block;
-	padding: 19px 0;
+    padding: 19px 0;
     width: 222px;
     background-color: #ffd429;
     border: none;
     transition: all 0.5s ease;
 }
+
 .button:hover {
-	background: #d9860e;
+    background: #d9860e;
+}
+
+
+
+/* Responsive */
+
+/* 992px - 1200px*/
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 960px;
+        padding: 0px 40px;
+    }
+
+    .header .wrapper {
+        margin: auto;
+    }
+    .header .travel {
+        width: 450px;
+        height: 450px;
+    }
+    .header .offer {
+        margin: 50px 0px;
+        width: 460px;
+    }
+    .header .button {
+        margin: auto;
+    }
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+    .container {
+        width: 720px;
+        padding: 0px;
+    }
+
+    .header {
+        text-align: center;
+    }
+    .header .wrapper {
+        display: table
+    }
+    .header .travel {
+        width: 500px;
+        height: 500px;
+    }
+    .header .offer {
+        display: table;
+        margin: 50px 0px;
+        width: auto;
+    }
+    .header .intro {
+        margin: 20px auto;
+    }
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+
+    .future .wrapper {
+        width: 400px;
+        box-sizing: border-box;
+        margin: 0px auto;
+        display: table;
+    }
+    .future .event-title {
+        width: 100%;
+        margin: 0px;
+        padding-left: 100px;
+        text-align: left;
+    }
+    .future #event-text {
+        width: 100%;
+        padding-left: 100px;
+        text-align: left;
+    }
+    .future .event-1 {
+        margin-top: 50px;
+        background: url('../img/icon1.png') no-repeat 0px center;
+    }
+    .future .event-2 {
+        margin-top: 50px;
+        background: url('../img/icon2.png') no-repeat 5px center;
+    }
+    .future .event-3 {
+        margin-top: 50px;
+        background: url('../img/icon3.png') no-repeat 15px center;
+    }
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+    .container {
+        width: 300px;
+    }
+
+    .header .offer {
+        margin: 50px 0px;
+        width: 300px;
+    }
+    .header .title {
+        font-size: 25px;
+    }
+    .header .intro {
+        width: auto;
+    }
+    .header .title span {
+        font-size: 35px;
+    }
+    .header .travel {
+        display: none;
+    }
+
+    .future .event-title {
+        width: 70%;
+        margin: 0px;
+        padding-left: 100px;
+        text-align: left;
+    }
+    .future #event-text {
+        width: 70%;
+        padding-left: 100px;
+        text-align: left;
+    }
+    .future .event-1 {
+        margin-top: 25px;
+        background: url('../img/icon1.png') no-repeat 0px center;
+    }
+    .future .event-2 {
+        margin-top: 25px;
+        background: url('../img/icon2.png') no-repeat 5px center;
+    }
+    .future .event-3 {
+        margin-top: 25px;
+        background: url('../img/icon3.png') no-repeat 15px center;
+    }
+    .future .wrapper {
+        width: 300px;
+    }
+    
+    .order .form {
+        margin: 25px auto;
+        width: 300px;
+    }
+    .footer .credits {
+        width: 250px;
+    }
 }
