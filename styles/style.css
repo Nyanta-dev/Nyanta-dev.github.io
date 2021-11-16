@@ -181,9 +181,6 @@ h3 {
         margin: 50px 0px;
         width: 460px;
     }
-    .header .button {
-        margin: auto;
-    }
 }
 
 /* 768px - 992px */
@@ -210,6 +207,9 @@ h3 {
     }
     .header .intro {
         margin: 20px auto;
+    }
+    .header .button {
+        margin: auto;
     }
 }
 
